@@ -1,0 +1,336 @@
+html, body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/background.png) no-repeat #FF530D;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+	border:none 0px;
+}
+
+#twofeet {
+	padding-left: 100px;
+	padding-bottom: 70px;
+}
+
+#header h1 { 
+	text-indent: -9999px; /* -- hides the original text --*/
+	width: 770px;
+	height: 134px;
+	margin: 100px;
+	margin-left: 320px;
+}
+
+#container {
+	width: 900px;
+	margin: 0 auto; 
+}
+
+#page {
+	width: 800px;
+	background: #E8D6E6;
+	margin: 28px 0 0 14px;
+	min-height: 90%;
+	padding:21px;
+	border-top-right-radius: 28px 28px;
+	border-bottom-left-radius: 28px 28px;
+	opacity: 0.95;
+}
+
+/* 	MENU */
+
+#pagemainmenu {
+	list-style: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 742px;
+	position: relative;
+	margin: 0 0 21px -21px;
+	height: 30px;
+	padding-left:100px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;	
+	background: #BC2288;
+}
+
+#pagemainmenu > li {
+	display: inline-block;
+}
+
+#pagemainmenu a {
+	font-style: italic;
+	display: block;
+	float: left;
+	padding: 8px 30px;
+	font-size:12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-right: 2px solid white;	
+}
+
+#pagemainmenu a:first-child {
+	border-left: 2px solid white;	
+	padding-left: 45px;
+}
+
+#pagemainmenu a:hover {
+	background: #EF6FC4;
+}
+
+#pagemaincontent {
+	min-height: 70%;
+}
+
+/* PAGE FOOTER */
+
+#pagefooter {
+	min-height: 50px;
+	text-align: center;
+}
+
+#social_networks {
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#social_networks > li {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+}
+#social_networks a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+#sn_facebook {
+	background: url(images/spice-social-gadget-sprite_32px.png) no-repeat;
+	background-position: 0px -32px;
+}
+
+#sn_facebook:hover {
+	background-position: 0px -64px;
+}
+
+#sn_twitter {
+	background: url(images/spice-social-gadget-sprite_32px.png) no-repeat;
+	background-position: -256px -32px;
+}
+
+#sn_twitter:hover {
+	background-position: -256px -64px;
+}
+
+/* GENRE */
+#balletDancer {
+	padding-left: 180px;
+}
+
+#maleDancer {
+	padding-left: 180px;
+}
+
+#BallroomDancers {
+	padding-left: 200px;
+}
+
+#tapDance {
+	padding-left: 180px;
+}
+
+/* GALLERY */
+#gallery {
+	width: 100%;
+	height: 720px; 
+	margin: 0px auto;
+	position: relative;
+}
+
+#gallery > a {
+	float: left;
+	width: 24%;
+	height: 24%;
+	position: relative;
+	margin: 0.5%;
+	
+	border:1px solid #ffffff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox version */
+	
+	text-decoration: none;
+	text-align: center;
+}
+
+#gallery > a > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.3; /* Will make it semi-transparent */
+	cursor: pointer;
+}
+
+#gallery > a:focus > img {
+	width: 250%; 
+	height: 250%;
+	
+	opacity: 1;
+	z-index: 1;
+	cursor: default;
+	
+	border: none 0px; /* remove white border */
+	border-radius: 10px; /* give image rounded corners*/
+}
+
+#gallery > a:focus {
+	outline: none 0px;
+}
+
+
+#gallery > a:nth-child(4n + 3) > img, #gallery a:nth-child(4n + 4) > img {
+	right: 0px;
+}
+
+#gallery > a:nth-child(n + 9) > img {
+	bottom: 0px;
+}
+
+#gallery > a > span {
+	display: none; /* hidden until image enlarged*/
+	text-decoration: none; /* removes underline */
+	/* adds a semi-transparent gradient */
+	background: linear-gradient(rgba(109, 188, 219, 0.5), rgba(255, 255, 255, 0.5));
+} 
+
+#gallery > a:focus > span {
+	display: inline-block; /* shows caption when enlarged */
+	z-index: 2; /* brings to the front */
+	position: absolute;
+	width: 250%;
+	height: 20%;
+	top: 230%;
+	/* adds rounded corners but only to bottom */
+	border-radius: 0px 0px 10px 10px;
+}
+
+
+#gallery > a:nth-child(4n +1) > span, #gallery a:nth-child(4n + 2) > span {
+	left: 0%;
+}
+
+
+#gallery > a:nth-child(4n +3) > span, #gallery a:nth-child(4n + 4)> span {
+	right: 0%;
+}
+
+
+#gallery > a:nth-child(n +9) > span{
+	top: 80%;
+	bottom: 0%;
+}
+
+
+.closed { /* selects any element with a class attribute = closed */
+    background: url(images/fileclose.png) no-repeat;
+    background-position: top center; /* displays the background at the top centre position */
+    width: 64px;
+    height: 64px;
+    display: none;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    left: 15%;
+    text-align: center;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#gallery a:focus ~ .closed {
+    display:block;
+}
+
+.closed > span {
+    position: absolute;
+    left: 15px;
+    top: 24px;
+}
+
+
+/* VIDEOS */
+
+#videos {
+	width: 100%;
+	overflow: auto;
+}
+
+#videos > iframe {
+	float: left;
+	width: 44%;
+	margin: 10px 2.5%; 
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+/* CONTACT */
+
+
+.contactForm {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+div.contactForm + footer {
+	padding: 10px 0px;
+	clear: both;
+}
+
+.contactForm label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+.contactForm input, .contactForm textarea, .contactForm select {
+	width: 315px;
+	margin-left: 5px;
+}
+
+#getInTouchForm > div, #jobForm > div {
+	margin: 5px 0px;
+}
+
+.contactForm .autoSize {
+	width: auto;
+}
+
+#contactCopyMe {
+	margin-left: 112px;
+}
+
+p a, a { 
+	color: black;
+	font-weight: bold;
+}
+
+p a:hover, a:hover {
+	color: white;
+}
+

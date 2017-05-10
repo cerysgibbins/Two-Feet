@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Two Feet</title>
+        <link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	
+	<body>
+		<div id="container">
+        	<div id="page"> 
+                <a href="welcome.html"><img src="images/logo.png" alt="Image of logo" width="163" height="222" id="logo" /></a>
+				<img src="images/two-feet2.png" alt="Title of Website" width="427" height="75" id="twofeet" />
+			<nav>
+				<ul id="pagemainmenu">
+					<li><a href="welcome.html">Home</a></li>
+					<li><a href="genres.html">Genres</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="contact.html">Contact</a></li>				
+				</ul>
+			</nav>
+				
+		<div id="pagemaincontent">
+				
+			<article>
+			<div class="leftColumn contactForm">
+				<h1>Contact Me</h1>
+					<p>Please feel free to contact me to discuss any queries or questions you may have, or if 
+					you require any additional information. Thank You. Contact details can be found below.</p>
+					<p>Also, please feel free to use the form below if you have a question or a comment, or if you just want to say hello.</p>		
+					
+					<form id="getInTouchForm" method="get" action="formSubmission.html">
+			
+						<div>
+							<label for="contactFirstName">From:</label>
+							<input class="autoSize" type="text" name="contactFirstName" id="contactFirstName" placeholder="First Name" required/>
+							<input class="autoSize" type="text" name="contactSurname" id="contactSurname" placeholder="Surname" required />
+						</div>
+						
+						<div>
+							<label for="contactEmail">Email:</label>
+							<input type="email" name="contactEmail" id="contactEmail" placeholder="Your email address" required/>
+						</div>
+						
+						<div>
+							<label for="contactMessage">Message:</label>
+							<input type="textarea" name="contactMessage" id="contactMessage" placeholder="Your message" required/>
+						</div>
+						
+						<div>
+							<input class="autoSize" type="checkbox" name="contactCopyMe" id="contactCopyMe" required />Send a copy of this message.
+							<label class="autoSize" for="contactCopyMe"></label>
+						</div>
+					
+						<div>
+							<label for="submitButton"></label>
+							<input class="autoSize" type="submit" value="Send Message" />
+						</div>
+				
+				
+					</form>
+				</div>
+			
+			<footer>
+			<div id="name_hover">
+				<p>Problems sending message? Send an email direct to
+					<a href="mailto:cerys_gibbs@hotmail.co.uk">Cerys Gibbins</a>
+				</p>
+			</div>	
+	
+			</footer>
+			
+			</article>
+			
+		<footer id="pagefooter">
+			<div>
+				<ul id="social_networks">
+					<li id="sn_facebook"><a href="http://www.facebook.com/cerysgibbins" target="_blank"></a></li>
+					<li id="sn_twitter"><a href="http://www.twitter.com/cerysgibbins" target="_blank"></a>
+				</ul>
+		
+			</div>
+		<p>Cerys Gibbins &copy; - Web Authoring 2013</p>
+		</footer>
+			
+			
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>
